@@ -4,7 +4,7 @@ const path=require('path')
 
 app.use(express.static('public'))
 
-app.set('puerto',process.env.PORT || 3001)
+app.set('puerto',process.env.PORT || 3000)
 
 app.get('/',function(req,res){
     res.sendFile(path.join(__dirname,'./views/home.html'))
